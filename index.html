@@ -1,123 +1,113 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HUB de Jogos</title>
-    <link rel="shortcut icon" href="Imagens/favicon.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+      rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="imgs/fav.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/script.js"></script>
+    <script src="js/pesquisa.js"></script>
+    <title>Games Hub</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>GameHub</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Jogos</a></li>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Biblioteca</a></li>
-                <li><a href="#">Perfil</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar">
+      
+      <div class="logo">
+        <i class="bi bi-controller"></i>
+        <p class="game-logo">Game<span class="hub-logo selecionado">Hub</span></p>
+      </div>
+      <div class="navv">
+      <div class="opcoes">
+        <a class="filtro plataforma" id="pc" href="#">PC</a>
+        <p>|</p>
+        <a class="filtro plataforma" id="browser"href="#">Browser</a>
+        <p>|</p>
+        <a class="filtro plataforma selecionado" id="all" href="#">Todos</a>
+      </div>
+      <div class="fav">
+        <a id="favoritos" class="textt" href="#">Favoritos</a>
+      </div>
+    </div>
+    </nav>
 
-    <main>
-        <section class="games-container">
-            <h2>Jogos em Destaque</h2>
-            <div class="game-list">
-                <!-- Jogo 1 -->
-                <div class="game">
-                    <img src="Imagens/CS1.6.jpg" alt="Jogo 1">
-                    <h3>Conter Strike 1.6</h3>
-                    <a class="gamelink" href="https://www.bing.com/ck/a?!&&p=f44978cba63fb4e5da9ae190cf971c99f5fa56aaa6090efd429349b5b0ab3549JmltdHM9MTc0MjUxNTIwMA&ptn=3&ver=2&hsh=4&fclid=3a16a77c-da76-6ad9-3433-b2fedb216bf0&psq=Cs+online&u=a1aHR0cHM6Ly9wbGF5LWNzLmNvbS9wdC8&ntb=1" target="_blank">Play</a>
-                </div>
-                <!-- Jogo 2 -->
-                <div class="game">
-                    <img src="Imagens/KOF.jpg" alt="Jogo 2">
-                    <h3>King of fighters</h3>
-                    <a class="gamelink" href="https://jogosnainternet.com.br/jogo/the-king-of-the-fighter-2002/" target="_blank">Play</a>
-                </div>
-                <!-- Jogo 3 -->
-                <div class="game">
-                    <img src="Imagens/Minecraft.jpg" alt="Jogo 3">
-                    <h3>Minecraft</h3>
-                    <a class="gamelink" href="https://eaglercraft.com/" target="_blank">Play</a>
-                </div>
-                <!-- Jogo 4 -->
-                <div class="game">
-                    <img src="Imagens/NarutovsBleach.jpg" alt="Jogo 4">
-                    <h3>Naruto Vs Bleach</h3>
-                    <a class="gamelink" href="https://jogosnainternet.com.br/jogo/bleach-vs-naruto-30/" target="_blank">Play</a>
-                </div>
-                <!-- Jogo 5 -->
-                <div class="game">
-                    <img src="https://th.bing.com/th/id/OIP.s11Fafd6ijHO5FUVAM_mKgAAAA?w=112&h=112&c=7&r=0&o=5&pid=1.7" alt="Jogo 5">
-                    <h3>Pokemon Showdown</h3>
-                    <a class="gamelink" href="https://pokemonshowdown.com/" target="_blank">Play</a>
-                </div>
-                <!-- Jogo 6 -->
-                <div class="game">
-                    <img src="Imagens/Supremacy.jpg" alt="Jogo 6">
-                    <h3>Supremacy 1914</h3>
-                    <a class="gamelink" href="https://www.supremacy1914.com/?source=homescreen" target="_blank">Play</a>
-                </div>
-                <!-- Jogo 7 -->
-                <div class="game">
-                    <img src="Imagens/Venge.jpg" alt="Jogo 7">          
-                    <h3>Venge io</h3>
-                    <a class="gamelink" href="https://venge.io/" target="_blank">Play</a>
-                </div>
-                <!-- Jogo 8 -->
-                <div class="game">
-                    <img src="Imagens/SuperMario.jfif" alt="Em breve">
-                    <h3>Super Mario World</h3>
-                    <a class="gamelink" href="https://jogosnainternet.com.br/jogo/super-mario-world/" target="_blank">Play</a>
-                </div>
-                <!-- Jogo 9 -->
-                <div class="game">
-                    <img src="Imagens/SubwaySurfers.jfif" alt="Em breve" >
-                    <h3>Subway Surfers</h3> 
-                    <a class="gamelink" href="https://subway-surfers.org/" target="_blank">Play</a>
-                </div>
-                <!-- Jogo 10 -->
-                <div class="game">
-                    <img src="Imagens/lUTA.jfif" alt="Street Fighter II">
-                    <h3>Street Fighter II</h3>
-                    <a class="gamelink" href="https://www.retrogames.cz/play_304-SNES.php" target="_blank">Play</a>
-                </div>
-                <div class="game">
-                    <img src="Imagens/marvelvscapcom.jpg" alt="Marvel Vs Capcom">
-                    <h3>Marvel Vs Capcom</h3>
-                    <a class="gamelink" href="https://jogosnainternet.com.br/jogo/marvel-vs-capcom/" target="_blank">Play</a>
-                </div>
-                <div class="game">
-                    <img src="Imagens/Makeitmeme.jfif" alt="Em breve">
-                    <h3>Make it Meme</h3>
-                    <a class="gamelink" href="https://makeitmeme.com/pt/" target="_blank">Play</a>
-                </div>
-                <div class="game">
-                    <img src="Imagens/haxball.jpg" alt="Em breve">
-                    <h3>HaxBall</h3>
-                    <a class="gamelink" href="https://www.haxball.com/" target="_blank">Play</a>
-                </div>
-                <div class="game">
-                    <img src="" alt="Em breve">
-                    <h3>Em breve</h3>
-                    <a onclick="alert('jogo não cadastrado')" class="gamelink" href="#" target="_blank">Play</a>
-                </div>
-                <div class="game">
-                    <img src="https://via.placeholder.com/200x300?text=Jogo+10" alt="Em breve">
-                    <h3>Em breve</h3>
-                    <button onclick="alert('Jogo não cadastrado')">Play</button>
-                </div>
-            </div>
-        </section>
-    </main>
+    <div class="pesquisa">
+        <form class="pesquisa-form" onsubmit="return false;">
+            <input type="search" id="search-bar" placeholder="Buscar..." class="busca-form">
+            <button type="button" id="search-btn" class="busca-button">Pesquisar</button>
+        </form>
+    </div>
 
-    <footer>
-        <p>&copy; 2025 GameHub. Todos os direitos reservados.</p>
-    </footer>
+<main>
+    <div class="game-container">
+        <div class="game-title">Conter Strike 1.6</div>
+        <a href="https://play-cs.com/pt/" target="_blank" ><img src="imgs/CS1.6.png"></a>
+    </div>
+        <div class="game-container">
+        <div class="game-title">King of fighters</div>
+        <a href="https://jogosnainternet.com.br/jogo/the-king-of-the-fighter-2002/" target="_blank" ><img src="imgs/KOF.png"></a>
+    </div>
+        <div class="game-container">
+        <div class="game-title">Minecraft</div>
+        <a href="https://eaglercraft.com/" target="_blank" ><img src="imgs/Minecraft.jpg"></a>
+    </div>
+        <div class="game-container">
+        <div class="game-title">Pokemon Showdown</div>
+        <a href="https://th.bing.com/th/id/OIP.s11Fafd6ijHO5FUVAM_mKgAAAA?w=112&h=112&c=7&r=0&o=5&pid=1.7" target="_blank" ><img src="imgs/Pokemon.avif"></a>
+    </div>
+        <div class="game-container">
+        <div class="game-title">Naruto Vs Bleach</div>
+        <a href="https://jogosnainternet.com.br/jogo/bleach-vs-naruto-30/" target="_blank" ><img src="imgs/NarutovsBleach.jpg" alt="IconePI"></a>
+    </div>
+        <div class="game-container">
+        <div class="game-title">Venge io</div>
+        <a href="https://venge.io/" target="_blank" ><img src="imgs/Venge.jpg" alt="IconePI"></a>
+    </div>
+        <div class="game-container">
+        <div class="game-title">Supremacy 1914</div>
+        <a href="https://www.supremacy1914.com/?source=homescreen" target="_blank" ><img src="imgs/Supremacy.jpg" alt="IconePI"></a>
+    </div>
+        <div class="game-container">
+        <div class="game-title">Super Mario World</div>
+        <a href="https://jogosnainternet.com.br/jogo/super-mario-world/" target="_blank" ><img src="imgs/SuperMario.jfif" alt="IconePI"></a>
+    </div>
+        <div class="game-container">
+        <div class="game-title">Street Fighter II</div>
+        <a href="https://www.retrogames.cz/play_304-SNES.php" target="_blank" ><img src="imgs/lUTA.jfif" alt="IconePI"></a>
+    </div>
+        <div class="game-container">
+        <div class="game-title">Subway Surfers</div>
+        <a href="https://subway-surfers.org/" target="_blank" ><img src="imgs/SubwaySurfers.jfif" alt="IconePI"></a>
+    </div>
+        <div class="game-container">
+        <div class="game-title">Marvel Vs Capcom</div>
+        <a href="https://jogosnainternet.com.br/jogo/marvel-vs-capcom/" target="_blank" ><img src="imgs/marvelvscapcom.jpg" alt="IconePI"></a>
+    </div>
+        <div class="game-container">
+        <div class="game-title">Make it Meme</div>
+        <a href="https://makeitmeme.com/pt/" target="_blank" ><img src="imgs/Makeitmeme.jfif" alt="IconePI"></a>
+    </div>
+        <div class="game-container">
+        <div class="game-title">HaxBall</div>
+        <a href="Imagens/haxball.jpg" target="_blank" ><img src="imgs/haxball.jpg" alt="IconePI"></a>
+</main>
+
+<footer>
+    <p>&copy; 2024 Áleffy Kauê. Todos os direitos reservados.</p>
+    <a href="https://github.com/Aleffy-Discente" class="footer-link">Sobre</a>
+</footer>
+    
 </body>
 </html>
